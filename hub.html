@@ -87,9 +87,9 @@
         <!-- Unity 한국사 (공개예정) -->
         <div class="card bg-white/90 p-6 rounded-2xl shadow-lg cursor-not-allowed">
           <img src="image/unitykh2.png" width="297" height="421" />  
-          <h4 class="font-bold text-gray-800 mb-2">Unity 한국사</h4>
-          <p class="text-sm text-gray-600 mb-4">난이도: ◆◆◇◇◇</p>
-          <button class="btn-disabled w-full py-3 rounded-full text-white font-medium">9월 4일 공개예정</button>
+          <h4 class="font-bold text-gray-800 mb-2">Unity 한국사 (배타)</h4>
+          <p class="text-sm text-gray-600 mb-4">난이도: ◆◆◇◇◇ - ◆◆◆◇◇</p>
+          <button class="btn-gradient w-full py-3 rounded-full text-white font-medium viewBtn" data-detail="base">배타 버전 보기</button>
         </div>
         <!-- Unity 통합 사회 (공개예정) -->
         <div class="card bg-white/90 p-6 rounded-2xl shadow-lg cursor-not-allowed">
@@ -165,6 +165,11 @@ document.querySelectorAll('.viewBtn').forEach(btn=>{
       detailTitle.textContent='베이스 탑제 한국사 II';
       detailDetail.textContent='2021년도 부터 2024년도까지 고1 학평 문제를 모두 모아 편집했습니다.'
       filePath = "PDF/basekh2.pdf"
+    }
+    if(type==='unitykh2') {
+      detailTitle.textContent='Unity 한국사 II (배타)';
+      detailDetail.textContent='2025 2학기 중간고사 대비 자료 총집합. [배타 버전] 오류가 있거나 불안정할 수 있습니다'
+      filePath = "PDF/unitykh2.pdf"
     }
   });
 });
